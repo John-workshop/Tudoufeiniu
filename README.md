@@ -37,12 +37,12 @@ A 2D-puzzle game based on
 &nbsp;&nbsp;&nbsp;&nbsp;2.3.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ui_system.c  
 &nbsp;&nbsp;&nbsp;&nbsp;2.3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ui_system.h  
 
-**2.4 utils**  
-&nbsp;&nbsp;&nbsp;&nbsp;2.4.1 constants.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.4.2 constants.h  
+#### 2.4 utils 
+&nbsp;&nbsp;&nbsp;&nbsp;2.4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constants.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constants.h  
 
-2.5 between-two-moments.exe  
-2.6 main.c  
-2.7 main.exe  
-2.8 save.dat  
-2.9 scene_template.c  
+#### 2.5 between-two-moments.exe  
+#### 2.6 main.c  
+#### 2.7 main.exe  
+#### 2.8 save.dat  
+#### 2.9 scene_template.c  
