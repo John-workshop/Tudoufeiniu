@@ -121,4 +121,4 @@ CIO - Emma Sisilia Wijaya (黄詩雅) - 1820252061\
 Programmer - John Alexander Budiyanto (君亚) - 1820252035\
 Designer - Valerie Sifra Andianta (陈飞翔) - 18202520\
 Architect - Bryan Aurelius Kho (许基诚) - 1820252051\
-Tester - Max William Moeljadi (巫天成) - 18202520
+Tester - Max William Moeljadi (巫天成) - 1820252029
