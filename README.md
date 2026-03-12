@@ -4,6 +4,9 @@ Official Tudoufeiniu's Github Repository
 ## Project Introduction
 A 2D-puzzle game based on 
 
+## Project Workflow and Gameplay Overview
+
+
 ## Project Structure
 
 ### 1. Assets
@@ -46,3 +49,48 @@ A 2D-puzzle game based on
 #### 2.7 main.exe  
 #### 2.8 save.dat  
 #### 2.9 scene_template.c  
+
+
+
+Tudoufeiniu/
+│
+├── Assets/
+│   └── (under construction)
+│
+├── src/
+│   ├── core/
+│   │   ├── game.c
+│   │   ├── game.h
+│   │   ├── scene_manager.c
+│   │   └── scene_manager.h
+│   │
+│   ├── scenes/
+│   │   ├── final_scene.c
+│   │   ├── intro_scene.c
+│   │   ├── intro_scene.h
+│   │   ├── menu_scene.c
+│   │   ├── menu_scene.h
+│   │   ├── puzzle1_scene.c
+│   │   ├── puzzle1_scene.h
+│   │   ├── puzzle2_scene.c
+│   │   ├── puzzle3_scene.c
+│   │   ├── puzzle4_scene.c
+│   │   ├── selectrole_scene.c
+│   │   └── selectrole_scene.h
+│   │
+│   ├── systems/
+│   │   ├── audio_system.c
+│   │   ├── save_system.c
+│   │   ├── save_system.h
+│   │   ├── ui_system.c
+│   │   └── ui_system.h
+│   │
+│   └── utils/
+│       ├── constants.c
+│       └── constants.h
+│
+├── main.c
+├── scene_template.c
+├── save.dat
+├── between-two-moments.exe
+└── main.exe
