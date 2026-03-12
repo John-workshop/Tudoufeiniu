@@ -98,7 +98,9 @@ Stores player progress and game data.
 # 🚀 Getting Started
 
 Clone the repository:
-/link/
+```
+git clone https://github.com/John-workshop/Tudoufeiniu.git
+```
 
 Compile and run the project using your C compiler.
 
