@@ -17,18 +17,18 @@ A 2D-puzzle game based on
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.4 scene_manager.h  
 
 **2.2 scenes**  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.1 final_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.2 intro_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.3 intro_scene.h  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.4 menu_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.5 menu_scene.h  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.6 puzzle1_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.7 puzzle1_scene.h  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.8 puzzle2_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.9 puzzle3_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.10 puzzle4_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.11 selectrole_scene.c  
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.12 selectrole_scene.h  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1&nbsp;&nbsp;&nbsp;&nbsp;final_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2&nbsp;&nbsp;&nbsp;&nbsp;intro_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3&nbsp;&nbsp;&nbsp;&nbsp;intro_scene.h  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.4&nbsp;&nbsp;&nbsp;&nbsp;menu_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.5&nbsp;&nbsp;&nbsp;&nbsp;menu_scene.h  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.6&nbsp;&nbsp;&nbsp;&nbsp;puzzle1_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.7&nbsp;&nbsp;&nbsp;&nbsp;puzzle1_scene.h  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.8&nbsp;&nbsp;&nbsp;&nbsp;puzzle2_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.9&nbsp;&nbsp;&nbsp;&nbsp;puzzle3_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.10&nbsp;&nbsp;&nbsp;puzzle4_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.11&nbsp;&nbsp;&nbsp;selectrole_scene.c  
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.12&nbsp;&nbsp;&nbsp;selectrole_scene.h  
 
 **2.3 systems**  
 &nbsp;&nbsp;&nbsp;&nbsp;2.3.1 audio_system.c  
