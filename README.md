@@ -19,7 +19,7 @@ The game focuses on:
 Players progress through a sequence of puzzle scenes where each puzzle requires observation, logic, and interaction.
 
 Game flow:
-![project game flow] (assets/project orientation.jpeg)
+![](assets/project orientation.jpeg)
 1. **Intro Scene** – story introduction  
 2. **Menu Scene** – player navigation  
 3. **Role Selection Scene** – choose character  
