@@ -19,7 +19,7 @@ The game focuses on:
 Players progress through a sequence of puzzle scenes where each puzzle requires observation, logic, and interaction.
 
 Game flow:
-[project game flow] (assets/project orientation.jpeg)
+![project game flow] (assets/project orientation.jpeg)
 1. **Intro Scene** – story introduction  
 2. **Menu Scene** – player navigation  
 3. **Role Selection Scene** – choose character  
@@ -119,4 +119,4 @@ CIO - Emma Sisilia Wijaya (黄詩雅) - 1820252061\
 Programmer - John Alexander Budiyanto (君亚) - 1820252035\
 Designer - Valerie Sifra Andianta (陈飞翔) - 18202520\
 Architect - Bryan Aurelius Kho (许基诚) - 1820252051\
-Tester - Max William Moeljadi (巫天成) - 18202520\
+Tester - Max William Moeljadi (巫天成) - 18202520
