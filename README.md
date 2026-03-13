@@ -1,12 +1,12 @@
 # 🎮 Tudoufeiniu
-Official **Tudoufeiniu** GitHub Repository.
+Official **Tudoufeiniu's** GitHub Repository.
 
 A 2D puzzle game project developed in C.
 
 ---
 
 # 📖 Project Introduction
-Tudoufeiniu is a **2D puzzle game** that challenges players to solve puzzles through logical reasoning and interaction with the environment.
+**Between Two Memories** is a story-driven cooperative puzzle game built using Raylib and C language. The game is designed to be played by two players offline on separate screens. Each player receives different pieces of information so the players must communicate and collaborate in order to progress through the game and uncover the story.
 
 The game focuses on:
 - puzzle-solving mechanics with high levels of order thinking skills
@@ -19,7 +19,6 @@ The game focuses on:
 Players progress through a sequence of puzzle scenes where each puzzle requires observation, logic, and interaction.
 
 Game flow:
-![](assets/project orientation.jpeg)
 1. **Intro Scene** – story introduction  
 2. **Menu Scene** – player navigation  
 3. **Role Selection Scene** – choose character  
@@ -32,49 +31,24 @@ Each puzzle scene introduces unique mechanics and interactions.
 
 # 📁 Project Structure
 ```
-Tudoufeiniu
+project-folder
 │
-├── Assets
-│   └── (under construction)
+├── assets/                    # Game assets (images, audio, etc.)
 │
-├── src
+├── src/                       # Source code
 │   │
-│   ├── core
-│   │   ├── game.c
-│   │   ├── game.h
-│   │   ├── scene_manager.c
-│   │   └── scene_manager.h
-│   │
-│   ├── scenes
-│   │   ├── final_scene.c
-│   │   ├── intro_scene.c
-│   │   ├── intro_scene.h
-│   │   ├── menu_scene.c
-│   │   ├── menu_scene.h
-│   │   ├── puzzle1_scene.c
-│   │   ├── puzzle1_scene.h
-│   │   ├── puzzle2_scene.c
-│   │   ├── puzzle3_scene.c
-│   │   ├── puzzle4_scene.c
-│   │   ├── selectrole_scene.c
-│   │   └── selectrole_scene.h
-│   │
-│   ├── systems
-│   │   ├── audio_system.c
-│   │   ├── save_system.c
-│   │   ├── save_system.h
-│   │   ├── ui_system.c
-│   │   └── ui_system.h
-│   │
-│   └── utils
-│       ├── constants.c
-│       └── constants.h
+│   ├── core/                  # Core game systems (game loop, base engine logic)
+│   ├── scenes/                # Scene and level management
+│   ├── systems/               # Gameplay systems and puzzle logic
+│   └── utils/                 # Helper functions and utilities
 │
-├── main.c
-├── scene_template.c
-├── save.dat
-├── between-two-moments.exe
-└── main.exe
+├── main.c                     # Main entry point of the program
+├── scene_template.c           # Template for creating new scenes
+│
+├── save.dat                   # Save file for storing game progress
+│
+├── main.exe                   # Executable generated after build
+└── between-two-moments.exe    # Previous executable name (older version)
 ```
 
 ---
@@ -97,13 +71,48 @@ Stores player progress and game data.
 
 # 🚀 Getting Started
 
-Clone the repository:
+1. Clone the repository:
 ```
 git clone https://github.com/John-workshop/Tudoufeiniu.git
 ```
+2. Open the project folder
+3. Open the file `main.c` using Notepad++ for Raylib
+4. Press `Fn + F6` or just `F6` to execute the file
+5. Run Raylib build using the script provided below or you can configure it yourself :
 
-Compile and run the project using your C compiler.
-
+```
+echo > Setup required Environment
+echo -------------------------------------
+SET PROJECT_NAME=between-two-moments
+SET RAYLIB_PATH=C:\raylib\raylib            
+SET COMPILER_PATH=C:\raylib\w64devkit\bin
+ENV_SET PATH=$(COMPILER_PATH)
+SET CC=gcc
+SET CFLAGS=$(RAYLIB_PATH)\src\raylib.rc.data -s -static -O2 -std=c99 -Wall -I$(RAYLIB_PATH)\src -Iexternal -DPLATFORM_DESKTOP
+SET LDFLAGS=-lraylib -lopengl32 -lgdi32 -lwinmm
+cd $(CURRENT_DIRECTORY)
+echo
+echo > Clean latest build
+echo ------------------------
+cmd /c IF EXIST $(PROJECT_NAME).exe del /F $(PROJECT_NAME).exe
+echo
+echo > Saving Current File
+echo -------------------------
+npp_save
+echo
+echo > Compile program
+echo -----------------------
+$(CC) --version
+$(CC) -o $(PROJECT_NAME).exe main.c core/game.c core/scene_manager.c scenes/menu_scene.c scenes/selectrole_scene.c scenes/intro_scene.c scenes/puzzle1_scene.c systems/save_system.c systems/ui_system.c $(CFLAGS) $(LDFLAGS)
+echo
+echo > Reset Environment
+echo --------------------------
+ENV_UNSET PATH
+echo
+echo > Execute program
+echo -----------------------
+cmd /c IF EXIST $(PROJECT_NAME).exe $(PROJECT_NAME).exe
+```
 ---
 
 # 📌 Future Development
