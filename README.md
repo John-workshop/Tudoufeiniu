@@ -125,9 +125,9 @@ cmd /c IF EXIST $(PROJECT_NAME).exe $(PROJECT_NAME).exe
 ---
 
 # 👨‍💻 Contributors
-CEO - Kevin Othniel Sidikpramana (陈国伟) - 1820252052\
-CIO - Emma Sisilia Wijaya (黄詩雅) - 1820252061\
-Programmer - John Alexander Budiyanto (君亚) - 1820252035\
-Designer - Valerie Sifra Andianta (陈飞翔) - 1820252030\
-Architect - Bryan Aurelius Kho (许基诚) - 1820252051\
-Tester - Max William Moeljadi (巫天成) - 1820252029
+CEO - Kevin Othniel Sidikpramana (陈国伟) [1820252052]\
+CIO - Emma Sisilia Wijaya (黄詩雅) - [1820252061]\
+Programmer - John Alexander Budiyanto (君亚) - [1820252035]\
+Designer - Valerie Sifra Andianta (陈飞翔) - [1820252030]\
+Architect - Bryan Aurelius Kho (许基诚) - [1820252051]\
+Tester - Max William Moeljadi (巫天成) - [1820252029]
