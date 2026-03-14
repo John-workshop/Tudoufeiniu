@@ -1,3 +1,7 @@
+// Code made by John (君亚) at 2026/3/11 22:16 PM
+// Code made by Max (巫天成) at 2026/3/11 00:05 PM
+// Code made by Bryan (许基诚) at 2026/3/11 00:18 PM
+
 #include "raylib.h"
 #include <stdbool.h>
 #include <stdio.h>
@@ -10,6 +14,7 @@ typedef struct SaveGame
     int role;
 } SaveGame;
 
+// Serializes the current GameState into a binary file 'save.dat' for persistence.
 void SaveGameFunc()
 {
     FILE *file = fopen("save.dat", "wb");
