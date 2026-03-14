@@ -1,3 +1,15 @@
+// Code made by John (君亚) at 2026/3/7 17:12 PM
+// Code made by Valerie (陈飞翔) at 2026/3/7 17:24 PM
+// Code made by Emma (君亚) at 2026/3/7 17:26 PM
+
+/**
+ * @file scene_manager.c
+ * @brief Implementation of the game's State Machine.
+ * 
+ * This module manages transitions between different game states (Scenes).
+ * It delegates the standard Raylib Init/Update/Draw calls to the currently active scene.
+ */
+
 #include "scene_manager.h"
 #include "../scenes/menu_scene.h" 
 #include "../scenes/selectrole_scene.h"
@@ -6,6 +18,7 @@
 
 GameScene currentScene;
 
+// Switches the active scene to a new state and immediately triggers its initialization.
 void ChangeScene(GameScene newScene)
 {
     currentScene = newScene;

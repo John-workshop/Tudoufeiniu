@@ -1,3 +1,6 @@
+// Code made by John (君亚) at 2026/3/6 22:53 PM
+// Code made by Bryan (君亚) at 2026/3/6 22:14 PM
+
 #ifndef GAME_H
 #define GAME_H
 
@@ -13,13 +16,13 @@ typedef enum PlayerRole
 
 typedef struct GameState
 {
-    PlayerRole role;
-    int currentLevel;
+     PlayerRole role;    // Current selected player role (PAST or FUTURE)
+    int currentLevel;   // Progress tracker (0 = Menu, 1 = Intro/Puzzle1, etc.)
 
-    float volume;
-    float brightness;
+    float volume;       // Master audio volume (0.0f to 1.0f)
+    float brightness;   // Screen brightness/alpha multiplier (0.0f to 1.0f)
 
-    bool hasSave;
+    bool hasSave;       // Flag indicating if a valid save.dat exists
 
 } GameState;
 
