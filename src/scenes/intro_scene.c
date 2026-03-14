@@ -1,3 +1,7 @@
+// Code made by John (君亚) at 2026/3/7 23:24 PM
+// Code made by Valerie (陈飞翔) at 2026/3/7 00:46 PM
+// Code made by Max (巫天成) at 2026/3/7 00:57 PM
+
 #include "raylib.h"
 #include "intro_scene.h"
 #include "../utils/constants.h"
@@ -69,6 +73,8 @@ void DrawIntroScene()
     ClearBackground(BLACK);
     //DrawText("ALBUM", (SCREEN_WIDTH/2)- MeasureText("ALBUM", 70), 50, 70, WHITE);
 
+    // Iterate through sprites and calculate fade-in alpha based on global timer.
+    // alpha = (current_time - spawn_time) / total_fade_duration
     for(int i = 0; i < SPRITE_COUNT; i++)
     {
         float spawnTime = i * SPAWN_DELAY;

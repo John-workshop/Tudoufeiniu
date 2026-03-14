@@ -1,3 +1,7 @@
+// Code made by John (君亚) at 2026/3/9 15:46 PM
+// Code made by Valerie (陈飞翔) at 2026/3/9 15:52 PM
+// Code made by Bryan (许基诚) at 2026/3/9 17:19 PM
+
 #include "raylib.h"
 #include "puzzle1_scene.h"
 #include "../utils/constants.h"
@@ -36,8 +40,10 @@ void UpdatePuzzle1Scene()
     }
 }
 
+// Handles 'Past' player interaction: rotating and flipping the memory object.
 void UpdatePuzzle1Past()
 {
+    // boxRect defines the interactive area around the object for mouse detection.
     Rectangle boxRect = {box.position.x - 120, box.position.y - 120, 360, 360};
     
     if (CheckCollisionPointRec(GetMousePosition(), boxRect))

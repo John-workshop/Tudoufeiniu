@@ -1,3 +1,7 @@
+// Code made by John (君亚) at 2026/3/7 21:07 PM
+// Code made by Valerie (陈飞翔) at 2026/3/7 22:18 PM
+// Code made by Emma (君亚) at 2026/3/7 22:29 PM
+
 #include "menu_scene.h"
 #include "../utils/constants.h"
 #include "../systems/save_system.h"
@@ -24,6 +28,7 @@ float startY;
 float centerX;
 float y;
 
+// Sets up menu layout constants, calculates centered positions, and measures text widths.
 void InitMenuScene()
 {
         spacing = 30;
@@ -43,6 +48,7 @@ void InitMenuScene()
         sloganWidth = MeasureText(slogan, 30);
 }
 
+// Processes menu logic, including handling 'Start' (deletes save) and 'Continue' (loads save).
 void UpdateMenuScene()
 {
     
@@ -66,6 +72,7 @@ void UpdateMenuScene()
     
 }
 
+// Renders the menu background, title, slogan, and interactive buttons.
 void DrawMenuScene()
 {
     ClearBackground(BLACK);
@@ -88,6 +95,7 @@ void DrawMenuScene()
     
 }
 
+// Triggers the transition to the Role Selection scene after menu interaction.
 void UnloadMenuScene()
 {
     ChangeScene(SELECT_ROLE);
